@@ -1,0 +1,72 @@
+Challenge(10's complement)
+
+Fill in social security number to a person in an alien planet.
+
+5 digits long(5 boxes to fill in)
+
+There are only 4000 on the planet
+
+Unfortunately, some of the social security numbers are negative and some are possible
+
+We solve this by defining a cool thing called "10's complement." The idea is suppose we want to represent the negative number -703. (Aidens number). We find a corresponding number, which when added to 703 gives you all 0's in just the 5 boxes. 
+
+ 00703
++xxxxx =
+x00000
+
+Find the number which when added to 00703 results in 99999
+Which is gonna be 99296
+
+Then add 1 to it. That will give you the number, that when added to 00703 results in 100000.
+
+Then we can toss out the 1 in the 1xxxxx because it doesn't fit n the 5 boxes. 
+
+This is interesting because we found a number that, when added to 00703, is 0. Who cares about the negative we are talking about getting the 0's in the 5 boxes.
+
+Since we have found a number that results in 0 when added to 00703, we have found the negative of 00703.
+
+Therefore, we treat -703 as 99297. Because when you added 99297 to 703 you get all 0's.
+
+Summarize what this text did in a reddit code in a concise, easy to explain manner.
+
+Observe 10's complement method:
+
+
+
+Now we will try to do 2's complement(perhaps using bits after doing binary number system):
+
+In class 10's compliment. 
+
+
+2's compliment
+We want to convert the number -75 to binary using 8 bits(one byte):
+
+01001011 is +75 in 8 bits
+
+Let's verify by adding the two's compliment to the positive-numer (+75) and see if we get all 0
+
+ 10110101 -- two's complement
++01001011 -- original number (75)
+*only put the rightmost digits and the left digits are carried over.
+= 00000000 -- there is one carried leftmost digit that does not fit and will be discarded
+
+The challenge is to represent a fractional number like 0.0625
+So first we will begin by doing it in decimal
+Challenge: Represent .0625 in ten boxes using 0-9 only.
+
+We will rewrite 0.0625 as 625*(10^-5)
+So then we will just put the number as 00625 no decimal point
+so we have 00625 
+Let's start by converting 5 to -5 in Two's complement using 4 boxes. 
+s
+Converting 5 to binary will get you 0101
+1010-1's complement of 5
+Adding 1 to that will give the 2's complement - 1011
+
+Verifying -- 
+	0101
+       +1011   =
+	0000
+
+Different types of binary depending on complement : ex: 1's complement bninary. 2's complement binary, etc
+
